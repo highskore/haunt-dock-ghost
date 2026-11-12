@@ -1,0 +1,20 @@
+[plugin]
+id = "dev.haunt.dock-ghost"
+name = "Dock ghost"
+description = "Haunt's Dock ghost sleeps, works and wakes with your agents"
+version = "0.1.0"
+api = "0.5"
+entry = "target/wasm32-wasip2/release/haunt_plugin.wasm"
+license = "MIT"
+
+[capabilities]
+dock = true
+# Only each agent's state is followed; no event text is kept.
+events = ["agent.session-start", "agent.prompt", "agent.subagent", "agent.tool", "agent.permission-request", "agent.question", "agent.notification", "agent.stop", "agent.unknown"]
+# Retries a refused show every 15 s.
+timer = true
+
+[settings]
+badge = { type = "bool", default = true, description = "The red Dock badge counting agents that need you" }
+blink = { type = "bool", default = true, description = "Working eyes blink now and then (never under Reduce Motion)" }
+unverified = { type = "bool", default = false, description = "Also follow events without the tab's nonce, which anything in the terminal can forge" }
