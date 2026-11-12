@@ -1,6 +1,19 @@
+<div align="center">
+
+<img src="docs/icon.png" width="96" alt="">
+
 # Dock ghost
 
-Haunt's Dock ghost sleeps, works and wakes with your agents.
+**Haunt's Dock ghost sleeps, works and wakes with your agents.**
+
+[![Haunt plugin](https://img.shields.io/badge/Haunt-plugin-D97757)](https://github.com/highskore/haunt-hackathon)
+![Plugin API 0.5](https://img.shields.io/badge/plugin%20API-0.5-111)
+![WASM component](https://img.shields.io/badge/WASM-component-654ff0?logo=webassembly&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/license-MIT-6b7280)](LICENSE)
+
+<img src="docs/screenshot.png" width="720" alt="The three Dock tiles: asleep with sleepy eyes, working with open eyes, and needing you with orange eyes">
+
+</div>
 
 The tile is Haunt's own icon, redrawn per state:
 
